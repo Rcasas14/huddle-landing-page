@@ -25,7 +25,7 @@ body {
     margin: 0;
     background-color: $violet;
     position: relative;
-    background-image: url('../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg');
+    background-image: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
@@ -34,7 +34,7 @@ body {
     
 
     @include breakpoint-down(small) {
-        background-image: url('../huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg');
+        background-image: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
     }
 
 }
