@@ -1,0 +1,48 @@
+.html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a::after,
+a::before,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: $violet;
+    position: relative;
+    background-image: url('/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Open Sans';
+    
+
+    @include breakpoint-down(small) {
+        background-image: url('/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg');
+    }
+
+}
+
+.container {
+    padding: 0 5.625rem;
+
+    @include breakpoint-down(small) {
+        padding: 0 2.5rem;
+    }
+}

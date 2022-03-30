@@ -1,0 +1,17 @@
+.header {
+    &__huddle_logo {
+        padding-top: 3.75rem;
+
+        @include breakpoint-down(small) {
+            padding-top: 2.1875rem;
+        }
+
+        img {
+            width: 14.375rem;
+
+            @include breakpoint-down(small) {
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.main {
+
+
+    &__content {
+        color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 3.125rem;
+
+        @include breakpoint-down(small) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__image {
+
+        img {
+            @include breakpoint-down(small) {
+                width: 315px;
+                height: 230px;
+            }
+        }
+    }
+
+    &__text {
+        text-align: left;
+
+        @include breakpoint-up(medium) {
+            margin-left: 4.375rem;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+            margin-bottom: 3.125rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.625rem;
+        font-family: 'Poppins';
+        font-weight: 600;
+        line-height: 1.6;
+        margin-top: 3.125rem;
+
+        @include breakpoint-up(medium) {
+            font-size: 2.0625rem;
+            width: 27.5rem;
+            
+            
+        }
+
+    }
+
+    &__desc {
+
+        line-height: 1.5;
+        font-weight: 400;
+        padding-bottom: 1.875rem;
+
+        @include breakpoint-up(medium) {
+            width: 33.75rem;
+
+        }
+    }
+
+    &__button {
+
+        color: $violet;
+        padding: .75rem 4.0625rem;
+        border-radius: 3.125rem;
+        background-color: #fff;
+        margin-top: 1.875rem;
+        box-shadow: 0px 3px 5px rgba(0, 0 , 0 , 0.5);
+
+        &:hover {
+            color: #fff;
+            transition: 200ms ease-in-out;
+            background-color: $softMagenta;
+        }
+    }
+
+    &__icon{
+        
+    }
+
+}
